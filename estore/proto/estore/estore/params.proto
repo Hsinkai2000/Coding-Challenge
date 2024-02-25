@@ -1,0 +1,15 @@
+syntax = "proto3";
+package estore.estore;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "estore/x/estore/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "estore/x/estore/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
