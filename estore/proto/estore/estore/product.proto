@@ -1,0 +1,13 @@
+syntax = "proto3";
+package estore.estore;
+
+option go_package = "estore/x/estore/types";
+
+message Product {
+  uint64 id = 1;
+  string title = 2; 
+  string description = 3; 
+  string price = 4; 
+  string quantity = 5; 
+  string creator = 6;
+}
